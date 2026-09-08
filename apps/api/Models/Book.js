@@ -39,3 +39,5 @@ const bookSchema = new Schema({
 }, {
   timestamps: true,
 });
+
+export default bookSchema;
