@@ -15,3 +15,10 @@ app.use("/books", bookRoutes);
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+// rota de teste para verificar se a API está funcionando
+app.get("/", (req, res) => {
+  res.json({
+    message: "Library API is running",
+  });
+});
